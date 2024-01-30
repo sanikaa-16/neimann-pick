@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+}
+
+
+header{
+    background: #F7D072;
+    height: 120px;
+}
+
+header *{
+    color:white
+}
+
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+header .logo-text{
+    margin:9px;
+    font-family: 'Candal', serif;
+}
+header .logo-text span{
+    color:#0E94A0;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding-top: 15px;
+    list-style: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: small;
+}
+header ul li{
+    float: left;
+    position: relative;
+}
+header ul li:hover ul {
+display:block;
+}
+
+header ul li ul{
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display:none;
+    z-index: 10;
+      
+}
+header ul li ul li{
+    width:100%;
+}
+
+header ul li ul li a{
+    padding: 10px;
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    float:center;
+}
+
+header ul li ul li a{
+    background-color:#FAB50F;
+    ;
+    transition:0.5s;
+}
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover{
+    background-color:#FAB50F;
+    transition: 0.5s;
+}
+
+
+header .menu-toggle{
+    display:none;
+}
+.division{
+    background-color:#1B7B9E;
+    color:#1B7B9E;
+    font-size: xx-small;
+}
+.division-y{
+    background-color:#FAB50F;
+    color: #FAB50F;
+    font-size:6px;
+}
+.text1{
+    background-color: #38a5d3;
+    border:none;
+}
+.intro{
+    opacity:0.7;
+  }
+
+.text {
+    border: 3px solid black; /* You can set any color for the border */
+}
+.info{
+    opacity:0.6;
+}
+.slogan{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.container{
+    font-family:'Lora';
+}
+.heading{
+    margin-top:40px;
+    background-color:#F7D072 ;
+}
+.texts1{
+    background-color:#F7D072 ;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top:40px;
+}
+.learn-more{
+    margin-top: 20px;
+}
+.background-image1{
+    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px; /* Adjust the height as needed */
+  position: relative;
+  opacity:0.9;
+}
+
+
+
+.background-image{
+    background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 580px; /* Adjust the height as needed */
+  position: relative;
+  opacity:0.9;
+}
+.texts2{
+    margin-top:130px;
+    margin-bottom:50px;
+    z-index: 10;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.texts3{
+    margin-top:60px;
+    margin-bottom:30px;
+    font-family:'Times New Roman', Times, serif;
+    z-index:10;
+}
+.gift{
+    margin-top: 50px;
+    z-index: 10;
+}
+.gift1{
+    padding-bottom: 50px;
+}
+.break{
+    background-color: #F7D072;
+}
+.background{
+    background-color: #FAB50F;
+}
+
+
+@media only screen and (max-width: 1177px){
+
+    header{
+        position: relative;
+    }
+    header ul{
+        width: 100%;
+        background: #0E94A0;
+        max-height:0px;
+        overflow:hidden;
+
+    }
+    .showing{
+        max-height:100em;
+    }
+    header ul li{
+        width: 100%;
+    }
+    header ul li ul{
+        position: static;
+        display:none;
+        width:100%
+    }
+    header .menu-toggle{
+        display:block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.9em;
+    }
+
+    header .logo{
+        margin-left: .5em;
+    }
+
+}
+
+
